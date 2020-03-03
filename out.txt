@@ -1,24 +1,18 @@
 > Task :compileJava UP-TO-DATE
 > Task :processResources NO-SOURCE
 > Task :classes UP-TO-DATE
+> Task :bootJar UP-TO-DATE
+> Task :jar SKIPPED
+> Task :assemble UP-TO-DATE
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
 
-> Task :bootRun
+> Task :test
+2020-03-03 17:32:34.729  INFO 15912 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::        (v2.2.2.RELEASE)
+> Task :check
+> Task :build
 
-2020-03-03 17:01:29.658  INFO 11108 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Starting PalTrackerApplication on PC337599 with PID 11108 (D:\PCF\pal-tracker\build\classes\java\main started by 696449 in D:\PCF\pal-tracker)
-2020-03-03 17:01:29.661  INFO 11108 --- [           main] i.p.pal.tracker.PalTrackerApplication    : No active profile set, falling back to default profiles: default
-2020-03-03 17:01:32.222  INFO 11108 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-03-03 17:01:32.273  INFO 11108 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-03 17:01:32.274  INFO 11108 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2020-03-03 17:01:32.655  INFO 11108 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-03 17:01:32.655  INFO 11108 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2924 ms
-2020-03-03 17:01:33.080  INFO 11108 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-03-03 17:01:33.314  INFO 11108 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-03-03 17:01:33.318  INFO 11108 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Started PalTrackerApplication in 4.427 seconds (JVM running for 5.73)
+BUILD SUCCESSFUL in 16s
+4 actionable tasks: 2 executed, 2 up-to-date
