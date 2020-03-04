@@ -1,13 +1,2 @@
 
-> Task :compileJava FAILED
-1 actionable task: 1 executed
-
-The build scan was not published due to a configuration problem.
-
-The Gradle Terms of Service have not been agreed to.
-
-For more information, please see https://gradle.com/scans/help/plugin-terms-of-service.
-
-Alternatively, if you are using Gradle Enterprise, specify the server location.
-For more information, please see https://gradle.com/scans/help/plugin-enterprise-config.
 
