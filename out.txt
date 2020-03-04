@@ -1,18 +1,1 @@
-> Task :compileJava UP-TO-DATE
-> Task :processResources NO-SOURCE
-> Task :classes UP-TO-DATE
-> Task :bootJar UP-TO-DATE
-> Task :jar SKIPPED
-> Task :assemble UP-TO-DATE
-> Task :compileTestJava
-> Task :processTestResources NO-SOURCE
-> Task :testClasses
-
-> Task :test
-2020-03-03 17:32:34.729  INFO 15912 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-
-> Task :check
-> Task :build
-
-BUILD SUCCESSFUL in 16s
-4 actionable tasks: 2 executed, 2 up-to-date
+>
