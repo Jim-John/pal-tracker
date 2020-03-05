@@ -16,9 +16,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.*;
-import io.micrometer.core.instrument.Counter;
-import io.micrometer.core.instrument.DistributionSummary;
-import io.micrometer.core.instrument.MeterRegistry;
 
 public class TimeEntryControllerTest {
     private TimeEntryRepository timeEntryRepository;
@@ -27,17 +24,7 @@ public class TimeEntryControllerTest {
     @BeforeEach
     public void setUp() {
         timeEntryRepository = mock(TimeEntryRepository.class);
-        MeterRegistry meterRegistry = mock(MeterRegistry.class);
-
-        doReturn(mock(DistributionSummary.class))
-                .when(meterRegistry)
-                .summary("timeEntry.summary");
-
-        doReturn(mock(Counter.class))
-                .when(meterRegistry)
-                .counter("timeEntry.actionCounter");
-
-        controller = new TimeEntryController(timeEntryRepository, meterRegistry);
+        controller = new TimeEntryController(timeEntryRepository);
     }
 
     @Test
