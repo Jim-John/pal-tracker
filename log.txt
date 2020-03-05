@@ -1,28 +1,27 @@
-Retrieving logs for app pal-tracker in org uki-engineering / space JimJohn as jim.john@cognizant.com...
+> Task :bootBuildInfo
+> Task :compileJava
+> Task :processResources NO-SOURCE
+> Task :classes
 
-   2020-03-04T18:04:02.35+0530 [RTR/5] OUT jjohn.cfapps.io - [2020-03-04T12:34:02.340443023Z] "GET /time-entries HTTP/1.1" 200 0 2 "-" "curl/7.55.1" "10.10.66.172:21436" "10.10.149.47:61166" x_forwarded_for:"203.132.208.9, 10.10.66.172" x_forwarded_proto:"http" vcap_request_id:"27a38996-3782-4555-4a27-f17ece940381" response_time:0.013725 gorouter_time:0.000084 app_id:"768c5c9b-929a-4c84-b083-5c88b8eab29a" app_index:"0" x_b3_traceid:"8fa8ec4b351740f3" x_b3_spanid:"8fa8ec4b351740f3" x_b3_parentspanid:"-" b3:"8fa8ec4b351740f3-8fa8ec4b351740f3"
-   2020-03-04T18:04:02.35+0530 [RTR/5] OUT 
-   2020-03-04T18:04:14.39+0530 [RTR/1] OUT jjohn.cfapps.io - [2020-03-04T12:34:14.210775109Z] "POST /time-entries HTTP/1.1" 201 63 63 "-" "curl/7.55.1" "10.10.2.67:21800" "10.10.149.47:61166" x_forwarded_for:"203.132.208.9, 10.10.2.67" x_forwarded_proto:"http" vcap_request_id:"373697f1-b581-46d7-683e-558019849003" response_time:0.186715 gorouter_time:0.000086 app_id:"768c5c9b-929a-4c84-b083-5c88b8eab29a" app_index:"0" x_b3_traceid:"9fb597849ff965f8" x_b3_spanid:"9fb597849ff965f8" x_b3_parentspanid:"-" b3:"9fb597849ff965f8-9fb597849ff965f8"
-   2020-03-04T18:04:14.39+0530 [RTR/1] OUT 
-   2020-03-04T18:04:22.90+0530 [RTR/9] OUT jjohn.cfapps.io - [2020-03-04T12:34:22.888479751Z] "GET /time-entries HTTP/1.1" 200 0 65 "-" "curl/7.55.1" "10.10.2.67:19838" "10.10.149.47:61166" x_forwarded_for:"203.132.208.9, 10.10.2.67" x_forwarded_proto:"http" vcap_request_id:"d44e48eb-7c51-4107-4e48-e8b78cff9cb3" response_time:0.020471 gorouter_time:0.000207 app_id:"768c5c9b-929a-4c84-b083-5c88b8eab29a" app_index:"0" x_b3_traceid:"c75fa5951a8040fa" x_b3_spanid:"c75fa5951a8040fa" x_b3_parentspanid:"-" b3:"c75fa5951a8040fa-c75fa5951a8040fa"
-   2020-03-04T18:04:22.90+0530 [RTR/9] OUT 
-   2020-03-04T18:04:33.10+0530 [RTR/11] OUT jjohn.cfapps.io - [2020-03-04T12:34:33.076874800Z] "PUT /time-entries/1 HTTP/1.1" 200 65 65 "-" "curl/7.55.1" "10.10.2.67:12536" "10.10.149.47:61166" x_forwarded_for:"203.132.208.9, 10.10.2.67" x_forwarded_proto:"http" vcap_request_id:"f80abfc4-9803-4f41-4f58-1302358e8ad9" response_time:0.029218 gorouter_time:0.000091 app_id:"768c5c9b-929a-4c84-b083-5c88b8eab29a" app_index:"0" x_b3_traceid:"618405171d439b53" x_b3_spanid:"618405171d439b53" x_b3_parentspanid:"-" b3:"618405171d439b53-618405171d439b53"
-   2020-03-04T18:04:33.10+0530 [RTR/11] OUT 
-   2020-03-04T18:04:42.30+0530 [RTR/11] OUT jjohn.cfapps.io - [2020-03-04T12:34:42.299791571Z] "DELETE /time-entries/1 HTTP/1.1" 204 0 0 "-" "curl/7.55.1" "10.10.2.67:14094" "10.10.149.47:61166" x_forwarded_for:"203.132.208.9, 10.10.2.67" x_forwarded_proto:"http" vcap_request_id:"295f32b5-a815-46bb-57bb-67e71dd8b51e" response_time:0.007553 gorouter_time:0.000106 app_id:"768c5c9b-929a-4c84-b083-5c88b8eab29a" app_index:"0" x_b3_traceid:"363d44f276b7c085" x_b3_spanid:"363d44f276b7c085" x_b3_parentspanid:"-" b3:"363d44f276b7c085-363d44f276b7c085"
-   2020-03-04T18:04:42.30+0530 [RTR/11] OUT 
-   2020-03-04T18:07:35.28+0530 [APP/PROC/WEB/0] OUT 2020-03-04 12:37:35.283  WARN 8 --- [nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: "time-entries"]
-   2020-03-04T18:07:35.31+0530 [RTR/3] OUT jjohn.cfapps.io - [2020-03-04T12:37:35.261020446Z] "GET /time-entries/time-entries HTTP/1.1" 400 0 291 "-" "okhttp/3.6.0" "10.10.2.67:50018" "10.10.149.47:61166" x_forwarded_for:"27.118.35.36, 10.10.2.67" x_forwarded_proto:"https" vcap_request_id:"01c28e3a-9702-4732-5486-d4de7183136e" response_time:0.055631 gorouter_time:0.000129 app_id:"768c5c9b-929a-4c84-b083-5c88b8eab29a" app_index:"0" x_b3_traceid:"cf9e2c8f483a36b4" x_b3_spanid:"cf9e2c8f483a36b4" x_b3_parentspanid:"-" b3:"cf9e2c8f483a36b4-cf9e2c8f483a36b4"
-   2020-03-04T18:07:35.31+0530 [RTR/3] OUT 
-   2020-03-04T18:28:19.01+0530 [RTR/3] OUT jjohn.cfapps.io - [2020-03-04T12:58:18.993951065Z] "POST /time-entries HTTP/1.1" 201 63 63 "-" "curl/7.55.1" "10.10.2.67:56262" "10.10.149.47:61166" x_forwarded_for:"203.132.208.9, 10.10.2.67" x_forwarded_proto:"http" vcap_request_id:"49a5ae34-645a-4467-7d76-ab0795e8c103" response_time:0.016625 gorouter_time:0.000078 app_id:"768c5c9b-929a-4c84-b083-5c88b8eab29a" app_index:"0" x_b3_traceid:"b7d1c180efe89c47" x_b3_spanid:"b7d1c180efe89c47" x_b3_parentspanid:"-" b3:"b7d1c180efe89c47-b7d1c180efe89c47"
-   2020-03-04T18:28:19.01+0530 [RTR/3] OUT 
-   2020-03-04T18:28:28.00+0530 [RTR/4] OUT jjohn.cfapps.io - [2020-03-04T12:58:27.984431226Z] "GET /time-entries HTTP/1.1" 200 0 65 "-" "curl/7.55.1" "10.10.2.67:18074" "10.10.149.47:61166" x_forwarded_for:"203.132.208.9, 10.10.2.67" x_forwarded_proto:"http" vcap_request_id:"498b1fa7-ccaf-4ff9-4df4-de6477564dee" response_time:0.019727 gorouter_time:0.000121 app_id:"768c5c9b-929a-4c84-b083-5c88b8eab29a" app_index:"0" x_b3_traceid:"e698d4d4479c9c17" x_b3_spanid:"e698d4d4479c9c17" x_b3_parentspanid:"-" b3:"e698d4d4479c9c17-e698d4d4479c9c17"
-   2020-03-04T18:28:28.00+0530 [RTR/4] OUT 
-   2020-03-04T18:28:51.32+0530 [RTR/1] OUT jjohn.cfapps.io - [2020-03-04T12:58:51.309668883Z] "PUT /time-entries/1 HTTP/1.1" 404 65 0 "-" "curl/7.55.1" "10.10.2.67:29172" "10.10.149.47:61166" x_forwarded_for:"203.132.208.9, 10.10.2.67" x_forwarded_proto:"http" vcap_request_id:"5f55aff2-9e54-4f9c-4245-69ce33edb3c7" response_time:0.017881 gorouter_time:0.000072 app_id:"768c5c9b-929a-4c84-b083-5c88b8eab29a" app_index:"0" x_b3_traceid:"fb2bbc2cbfcd99ba" x_b3_spanid:"fb2bbc2cbfcd99ba" x_b3_parentspanid:"-" b3:"fb2bbc2cbfcd99ba-fb2bbc2cbfcd99ba"
-   2020-03-04T18:28:51.32+0530 [RTR/1] OUT 
-   2020-03-04T18:29:13.00+0530 [RTR/11] OUT jjohn.cfapps.io - [2020-03-04T12:59:12.975961765Z] "PUT /time-entries/2 HTTP/1.1" 200 65 65 "-" "curl/7.55.1" "10.10.2.67:26038" "10.10.149.47:61166" x_forwarded_for:"203.132.208.9, 10.10.2.67" x_forwarded_proto:"http" vcap_request_id:"f1466498-903f-4950-4519-b1fdbb1e37b8" response_time:0.031959 gorouter_time:0.000139 app_id:"768c5c9b-929a-4c84-b083-5c88b8eab29a" app_index:"0" x_b3_traceid:"6d533e102024fb35" x_b3_spanid:"6d533e102024fb35" x_b3_parentspanid:"-" b3:"6d533e102024fb35-6d533e102024fb35"
-   2020-03-04T18:29:13.00+0530 [RTR/11] OUT 
-   2020-03-04T18:29:25.69+0530 [RTR/3] OUT jjohn.cfapps.io - [2020-03-04T12:59:25.671325505Z] "DELETE /time-entries/2 HTTP/1.1" 204 0 0 "-" "curl/7.55.1" "10.10.66.172:39622" "10.10.149.47:61166" x_forwarded_for:"203.132.208.9, 10.10.66.172" x_forwarded_proto:"http" vcap_request_id:"334a05d9-e2ff-4ac5-64dd-a63c07e143fa" response_time:0.023140 gorouter_time:0.000091 app_id:"768c5c9b-929a-4c84-b083-5c88b8eab29a" app_index:"0" x_b3_traceid:"0aee914dc14db9a7" x_b3_spanid:"0aee914dc14db9a7" x_b3_parentspanid:"-" b3:"0aee914dc14db9a7-0aee914dc14db9a7"
-   2020-03-04T18:29:25.69+0530 [RTR/3] OUT 
-   2020-03-04T18:29:39.80+0530 [APP/PROC/WEB/0] OUT 2020-03-04 12:59:39.808  WARN 8 --- [nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: "time-entries"]
-   2020-03-04T18:29:39.82+0530 [RTR/5] OUT jjohn.cfapps.io - [2020-03-04T12:59:39.788165952Z] "GET /time-entries/time-entries HTTP/1.1" 400 0 291 "-" "okhttp/3.6.0" "10.10.2.67:11384" "10.10.149.47:61166" x_forwarded_for:"27.118.35.36, 10.10.2.67" x_forwarded_proto:"https" vcap_request_id:"f523cbfd-86dd-408c-53e5-9be40d5812b9" response_time:0.038583 gorouter_time:0.000082 app_id:"768c5c9b-929a-4c84-b083-5c88b8eab29a" app_index:"0" x_b3_traceid:"a313afe285b3724d" x_b3_spanid:"a313afe285b3724d" x_b3_parentspanid:"-" b3:"a313afe285b3724d-a313afe285b3724d"
-   2020-03-04T18:29:39.82+0530 [RTR/5] OUT 
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2020-03-05 17:39:35.093  INFO 23944 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Starting PalTrackerApplication on PC337599 with PID 23944 (D:\PCF\pal-tracker\build\classes\java\main started by 696449 in D:\PCF\pal-tracker)
+2020-03-05 17:39:35.097  INFO 23944 --- [           main] i.p.pal.tracker.PalTrackerApplication    : No active profile set, falling back to default profiles: default
+2020-03-05 17:39:35.928  INFO 23944 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-05 17:39:36.169  INFO 23944 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-05 17:39:36.177  INFO 23944 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-05 17:39:36.177  INFO 23944 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-05 17:39:36.240  INFO 23944 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-05 17:39:36.240  INFO 23944 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1098 ms
+2020-03-05 17:39:36.601  INFO 23944 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-05 17:39:36.756  INFO 23944 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoint(s) beneath base path '/actuator'
+2020-03-05 17:39:36.807  INFO 23944 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-05 17:39:36.810  INFO 23944 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Started PalTrackerApplication in 2.044 seconds (JVM running for 2.427)
