@@ -1,4 +1,3 @@
-
 CREATE TABLE time_entries (
   id         BIGINT NOT NULL AUTO_INCREMENT,
   project_id BIGINT,
@@ -10,4 +9,3 @@ CREATE TABLE time_entries (
 )
   ENGINE = innodb
   DEFAULT CHARSET = UTF8MB4;
-  
